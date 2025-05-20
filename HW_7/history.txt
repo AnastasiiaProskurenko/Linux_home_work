@@ -1,0 +1,226 @@
+    1  #!/bin/bash
+    2  FIND_RESULT="/opt/210225-ptm"
+    3          find "$FIND_RESULT" -type f -name "*.sh" | while read FILE; do         if [ ! -x "$FILE" ]; then         chmod +x "$FILE";         echo "Execute: $FILE";         else         echo "already: $FILE";         fi;         done
+    4  echo "Done"
+    5  ## I don't know, why this script not work
+    6  #find_result=$(ls -laR /opt/210225-ptm | grep  -v / | awk '{print $9}')
+    7  #echo "Hi hier"
+    8  #	for FILE in $find_result; do
+    9  #	if [[ $FILE == *.sh ]];then
+   10  #	chmod +x "/opt/210225-ptm/$FILE"
+   11  #	echo " hhh "$FILE
+   12  #	fi
+   13  #	done
+   14  #echo "Done"
+   15  св
+   16  cd
+   17  rm -rf .git
+   18  ssh ec2-user@linux.itcareerhub.de
+   19  cd
+   20  mkdir mkdir git-merge-vs-rebase
+   21  mkdir git-merge-vs-rebase
+   22  cd
+   23  mkdir git-merge-vs-rebase
+   24  mkdir git-merge-vs-rebase
+   25  cd git-merge-vs-rebase
+   26  echo "Hello!" > file.txt
+   27  git status
+   28  git init
+   29  git status
+   30  git commit -m "init; first commit"
+   31  git config --global user.email "you@example.com"
+   32  git commit -m "init; first commit"
+   33  git checkout -b feature
+   34  echo "Feature 1" >> file.txt
+   35  git commit -am "feat: добавлена первая фича"
+   36  echo "Feature 2" >> file.txt
+   37  git commit -am "feat: добавлена second фича"
+   38  git branch
+   39  git branch -M main
+   40  git branch
+   41  history
+   42  git branch
+   43  git checkout -b feature
+   44  git branch
+   45  cd
+   46  cd git-merge-vs-rebase/
+   47  git branch
+   48  git status
+   49  git branch -M main
+   50  git add .
+   51  git commit -am "feat: добавлена первая фича"
+   52  git checkout -b feature
+   53  git branch
+   54  echo "second HELLO" >> file.txt
+   55  git commit -am "feat: добавлена second фича"
+   56  git checkout main
+   57  echo "Yooo" >> file.txt
+   58  git commit -am "vgjkjhvkuh"
+   59  git merge feature
+   60  nano file.txt
+   61  git commit -am "feat: добавлена вторая фича"
+   62  git log --oneline --graph --all
+   63  git branch
+   64  tree
+   65  free
+   66  св
+   67  cd
+   68  ls -la
+   69  cd /desctop
+   70  cd ..
+   71  ls -la
+   72  cd
+   73  cd Desktop/
+   74  ls l
+   75  ls -l
+   76  less AI\ Tool.txt 
+   77  file AI\ Tool.txt 
+   78  cd
+   79  mkdir new
+   80  cd new
+   81  echo "gggg" > file.txt
+   82  git init
+   83  echo "gggg" > file.txt
+   84  git branch -m main
+   85  git status
+   86  git add .
+   87  git status
+   88  git checkout -b feature
+   89  git branch
+   90  git checkout -b main
+   91  git commit -m "First"
+   92  git checkout -b feature
+   93  git branch
+   94  cd
+   95  mkdir git-conflict-demo
+   96  cd git-conflict-demo/
+   97  git init
+   98  git branch -M main
+   99  echo "Привет, Мир!" > file.txt
+  100  ls -la
+  101  git status
+  102  git add file.txt
+  103  git status
+  104  git checkout -b feature
+  105  echo "Эта строка добавлена в ветке feature" >> file.txt
+  106  git status
+  107  git commit -am "add stroka in feature"
+  108  git checkout main
+  109  git branch
+  110  git checkout -b main
+  111  git add .
+  112  git branch
+  113  echo "main new" >> file.txt
+  114  git status
+  115  git add .
+  116  git status
+  117  git branch
+  118  git switch -c feat
+  119  git branch
+  120  echo "tex" >> file.txt
+  121  git add .
+  122  git commit -m "add text"
+  123  git checkout main 
+  124  git merge feat
+  125  git merge feature
+  126  git branch
+  127  git checkout feature
+  128  echo "nnnnnn" >> text.txt
+  129  git add .
+  130  git status
+  131  git commit -m "new text"
+  132  echo "print all in this file" >> text.txt
+  133  git status
+  134  git add .
+  135  git status
+  136  git commit -m "new text for print"
+  137  git chechout main
+  138  git checkout main
+  139  git branch
+  140  git merge feature
+  141  git log --online --graph
+  142  git log --oneline --graph
+  143  git log --oneline --decorate
+  144  git log --oneline --decorate --graph
+  145  git reset --hard HEAD~1
+  146  git checkout feature
+  147  git branch
+  148  git rebase main
+  149  echo "second evrysing" >> test.txt
+  150  ls 
+  151  git add .
+  152  git commit -m "new text for print"
+  153  git status
+  154  git log --oneline
+  155  git reset --soft HEAD~1
+  156  git status
+  157  git log --oneline
+  158  git commit -m "new text for print"
+  159  git commit -m "last update"
+  160  git reset --mixed HEAD~1
+  161  git log --oneline
+  162  git status
+  163  git reset --hard HEAD~1
+  164  ls -l
+  165  git status
+  166  git add .
+  167  git commit -m "last update"
+  168  git reset --hard HEAD~1
+  169  ls -l
+  170  git checkout main
+  171  git branch
+  172  echo "5 added for test" >> file.txt
+  173  git add .
+  174  git checkout -- file.txt
+  175  cat file.txt
+  176  git commit -m "last test 5"
+  177  git checkout -- file.txt
+  178  cat file.txt
+  179  echo "5 added for test" >> file.txt
+  180  git checkout -- file.txt
+  181  cat file.txt
+  182  echo "5 added for test" >> file.txt
+  183  cat file.txt
+  184  git checkout -- file.txt
+  185  cat file.txt
+  186  git checkout -- file.txt
+  187  git log --oneline
+  188  git revert 09d12a0
+  189  cd
+  190  ssh ~/.ssh/ ec2-user@linux.itcareerhub.de
+  191  ssh -i ~/.ssh/ ec2-user@linux.itcareerhub.de
+  192  ssh ec2-user@linux.itcareerhub.de
+  193  ssh ec2-user@linux.itcareerhub.de
+  194  cd
+  195  git origin git@github.com:AnastasiiaProskurenko/GitHub.git
+  196  origin git@github.com:AnastasiiaProskurenko/GitHub.git
+  197  cd 
+  198  git remote add origin git@github.com:AnastasiiaProskurenko/GitHub.git
+  199  cd
+  200  git clone https://github.com/AnastasiiaProskurenko/GitHub.git
+  201  cd GitHub
+  202  git checkout -b feature
+  203  git branch
+  204  git status
+  205  git init
+  206  echo  "New file README create" >> README.MD
+  207  LS
+  208  ls -la
+  209  git status
+  210  git add .
+  211  git status
+  212  echo "new text for readme" >> README.MD 
+  213  echo "**/logs/debug.log" >> .gitignore 
+  214  git status
+  215  git add .
+  216  git commit -m "Added two changed files in feature : gitignor and README"
+  217  git status
+  218  git push origin feature
+  219  git commit --amend
+  220  git log
+  221  git log --oneline
+  222  git checkout main
+  223  git branch
+  224  git status
+  225  git merge feature
+  226  history >> history.txt
